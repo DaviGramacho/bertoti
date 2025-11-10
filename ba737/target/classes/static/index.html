@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Pilotos</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #444; color: #fff; margin: 2em; }
+        h1 { color: #fff; }
+        form { margin-bottom: 2em; }
+        input, button { margin-right: 0.5em; }
+        li { margin-bottom: 0.5em; }
+        #pilotList button { margin-left: 0.4em; }
+    </style>
+</head>
+<body>
+<h1>Cadastro de Pilotos</h1>
+<form id="pilotForm">
+    <input type="hidden" id="pilotId" />
+    <input type="text" id="nome" placeholder="Nome" required />
+    <input type="text" id="licenca" placeholder="Licença" required />
+    <input type="number" id="horasVoo" placeholder="Horas de Voo" required />
+    <button type="submit">Salvar</button>
+</form>
+<ul id="pilotList"></ul>
+<script src="main.js"></script>
+</body>
+</html>

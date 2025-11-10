@@ -9,14 +9,14 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Pilot {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String nome;
 
-    private String licenca; // Ex: PLA, PC, PP
+    private String licenca;
 
+    @Column(name = "horas_voo")
     private int horasVoo;
 }
