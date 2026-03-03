@@ -19,5 +19,14 @@ O principal objetivo da plataforma é **otimizar a gestão de talentos dentro da
   Tecnologia e Defesa — especializada no desenvolvimento e fornecimento de aeróstatos (balões cativos de alta tecnologia) para monitoramento, vigilância aérea e telecomunicações. A empresa atua em projetos estratégicos voltados para segurança pública, defesa, grandes eventos e proteção de infraestruturas críticas.
 
 ### 🎯 2.2 Necessidade Identificada
+A empresa enfrentava desafios na identificação rápida e estruturada das competências internas disponíveis. As informações sobre habilidades técnicas (hard skills), competências comportamentais (soft skills), certificações e experiências profissionais dos colaboradores estavam dispersas, desatualizadas ou armazenadas de forma não padronizada.
+
+- Dificuldade em alocar os profissionais mais adequados para projetos específicos.
+
+- Dependência de conhecimento informal dos gestores sobre as capacidades das equipes.
+
+- Perda de oportunidades estratégicas por falta de visibilidade sobre talentos internos.
+
+- Baixa eficiência na gestão de desenvolvimento e capacitação profissional.
 
 
