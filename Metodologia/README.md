@@ -28,5 +28,15 @@ A empresa enfrentava desafios na identificação rápida e estruturada das compe
 - Perda de oportunidades estratégicas por falta de visibilidade sobre talentos internos.
 
 - Baixa eficiência na gestão de desenvolvimento e capacitação profissional.
-
-
+---
+## 🧠 2.3 Tecnologias Utilizadas
+ 
+| Categoria | Tecnologias |
+|---|---|
+| **Back-end** | Java 21 · Spring Boot · JPA / Hibernate · Maven |
+| **Front-end** | Angular |
+| **Banco de Dados** | MySQL 8 |
+| **Documentação de API** | Swagger (OpenAPI) |
+| **Testes** | Postman |
+| **Controle de Versão** | Git · GitHub |
+| **IDEs** | IntelliJ IDEA · VS Code |
