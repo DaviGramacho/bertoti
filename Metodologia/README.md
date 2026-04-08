@@ -28,7 +28,6 @@ A empresa enfrentava desafios na identificação rápida e estruturada das compe
 - Perda de oportunidades estratégicas por falta de visibilidade sobre talentos internos.
 
 - Baixa eficiência na gestão de desenvolvimento e capacitação profissional.
----
 
 ### 💡 2.3 Solução Proposta pela Equipe
 
@@ -63,7 +62,6 @@ A solução consiste em um sistema que permite:
 * 🎓 **Gestão de desenvolvimento profissional**
   Auxiliar na identificação de necessidades de treinamento e capacitação, promovendo o crescimento contínuo dos colaboradores.
 
----
 ## 🧠 2.4 Tecnologias Utilizadas
  
 | Categoria | Tecnologias |
@@ -96,7 +94,7 @@ A solução consiste em um sistema que permite:
 * Apoio na geração de **dados estratégicos**, contribuindo para análise de competências e tomada de decisão.
 
 ---
-## 🤝 4. Soft Skills Desenvolvidas
+## 🤝 4.0 Soft Skills Desenvolvidas
 
 Durante o desenvolvimento do projeto DataSkill, foi possível aprimorar diversas competências comportamentais essenciais para o trabalho em equipe e desenvolvimento de software:
 
