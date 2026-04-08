@@ -121,3 +121,35 @@ Durante o desenvolvimento do projeto DataSkill, foi possível aprimorar diversas
 
 Essas soft skills foram fundamentais para o sucesso do projeto, contribuindo não apenas para a entrega técnica, mas também para a eficiência e organização da equipe como um todo.
 
+## 🛠️ 4.1 Hard Skills Desenvolvidas
+
+Durante o desenvolvimento do projeto, adquiri e aprofundei conhecimentos técnicos importantes, aplicando na prática diversas tecnologias utilizadas no mercado:
+
+* 💻 **Back-end (Java e Spring Boot)**
+  Aprendi a desenvolver APIs REST utilizando Java 21 com Spring Boot, estruturando aplicações de forma organizada, criando controllers, services e aplicando boas práticas de desenvolvimento.
+
+* 🗄️ **Persistência de Dados (JPA / Hibernate)**
+  Desenvolvi conhecimentos em mapeamento objeto-relacional (ORM), entendendo como entidades se relacionam com o banco de dados e como realizar operações de forma eficiente.
+
+* 🧱 **Gerenciamento de Dependências (Maven)**
+  Aprendi a gerenciar dependências, configurar o projeto e entender o ciclo de build utilizando Maven.
+
+* 🌐 **Integração com Front-end (Angular)**
+  Compreendi como funciona a comunicação entre front-end e back-end, trabalhando com requisições HTTP e integração de APIs.
+
+* 🗃️ **Banco de Dados (MySQL)**
+  Aprendi a modelar tabelas, estruturar dados e realizar consultas em banco de dados relacional.
+
+* 📄 **Documentação de API (Swagger / OpenAPI)**
+  Entendi a importância da documentação de APIs e como utilizá-la para facilitar testes e o uso por outros desenvolvedores.
+
+* 🧪 **Testes de API (Postman)**
+  Desenvolvi habilidades para testar endpoints, validar respostas e garantir o correto funcionamento da aplicação.
+
+* 🔧 **Controle de Versão (Git e GitHub)**
+  Aprendi a trabalhar com versionamento de código, commits, branches e colaboração em equipe utilizando Git e GitHub.
+
+* 🧑‍💻 **Ambientes de Desenvolvimento (IDEs)**
+  Ganhei experiência no uso de ferramentas como IntelliJ IDEA e Visual Studio Code para desenvolvimento, organização e depuração de código.
+
+
