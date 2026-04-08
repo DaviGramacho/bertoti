@@ -1,4 +1,4 @@
-# 🚀 Relatório do Projeto – API (Semestre Passado)
+# 🚀 Relatório do Projeto – API (3° Semestre)
 
 ---
 
@@ -75,3 +75,23 @@ A solução consiste em um sistema que permite:
 | **Testes** | Postman |
 | **Controle de Versão** | Git · GitHub |
 | **IDEs** | IntelliJ IDEA · VS Code |
+
+---
+## 👨‍💻 3.0 Contribuições Pessoais
+
+* Desenvolvimento da **feature #23 – API de Autoavaliação**, permitindo que colaboradores registrem suas próprias competências.
+
+* Implementação da **API REST**, incluindo definição de rotas, estrutura de requisições e respostas.
+
+* Criação da **lógica de negócio** para processamento e armazenamento das autoavaliações.
+
+* Integração da funcionalidade com o sistema, garantindo consistência com os demais módulos.
+
+* Contribuição na **modelagem da solução**, auxiliando na definição de como os dados de autoavaliação seriam utilizados.
+
+* Participação no **versionamento do projeto**, seguindo boas práticas de commits.
+
+* Colaboração com a equipe no desenvolvimento da solução, alinhando a funcionalidade às necessidades do projeto.
+
+* Apoio na geração de **dados estratégicos**, contribuindo para análise de competências e tomada de decisão.
+
