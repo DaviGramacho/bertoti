@@ -29,7 +29,42 @@ A empresa enfrentava desafios na identificação rápida e estruturada das compe
 
 - Baixa eficiência na gestão de desenvolvimento e capacitação profissional.
 ---
-## 🧠 2.3 Tecnologias Utilizadas
+
+### 💡 2.3 Solução Proposta pela Equipe
+
+Para resolver os desafios enfrentados pela ALTAVE, a equipe propôs o desenvolvimento de uma **plataforma digital integrada para gestão de competências dos colaboradores**.
+
+A solução consiste em um sistema que permite:
+
+* 📊 **Centralização das informações**
+  Reunir em um único ambiente todos os dados relacionados aos colaboradores, como:
+
+  * Hard skills (habilidades técnicas)
+  * Soft skills (competências comportamentais)
+  * Certificações
+  * Experiências profissionais
+
+* 🔍 **Busca inteligente de talentos**
+  Implementar filtros e mecanismos de pesquisa que possibilitem identificar rapidamente os profissionais mais adequados para cada projeto, com base nas competências necessárias.
+
+* 👤 **Perfil profissional estruturado**
+  Cada colaborador possui um perfil atualizado, facilitando a visualização clara de suas capacidades e histórico.
+
+* 📈 **Apoio à tomada de decisão**
+  Fornecer dashboards e relatórios para gestores, permitindo uma visão estratégica sobre:
+
+  * Distribuição de competências
+  * Lacunas de conhecimento
+  * Potenciais para desenvolvimento
+
+* 🚀 **Melhoria na alocação de equipes**
+  Reduzir a dependência de conhecimento informal e tornar o processo de alocação mais ágil, eficiente e assertivo.
+
+* 🎓 **Gestão de desenvolvimento profissional**
+  Auxiliar na identificação de necessidades de treinamento e capacitação, promovendo o crescimento contínuo dos colaboradores.
+
+---
+## 🧠 2.4 Tecnologias Utilizadas
  
 | Categoria | Tecnologias |
 |---|---|
