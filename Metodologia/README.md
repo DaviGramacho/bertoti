@@ -95,3 +95,31 @@ A solução consiste em um sistema que permite:
 
 * Apoio na geração de **dados estratégicos**, contribuindo para análise de competências e tomada de decisão.
 
+---
+## 🤝 4. Soft Skills Desenvolvidas
+
+Durante o desenvolvimento do projeto DataSkill, foi possível aprimorar diversas competências comportamentais essenciais para o trabalho em equipe e desenvolvimento de software:
+
+* 🗣️ **Comunicação**
+  Melhoria na troca de informações com a equipe, garantindo alinhamento sobre requisitos, funcionalidades e decisões técnicas.
+
+* 🤝 **Trabalho em equipe**
+  Colaboração ativa com outros membros do grupo, contribuindo para a construção conjunta da solução e resolução de problemas.
+
+* 🧠 **Pensamento analítico**
+  Capacidade de analisar o problema proposto pela empresa e propor soluções estruturadas, especialmente na modelagem da API de autoavaliação.
+
+* ⏱️ **Gestão de tempo**
+  Organização das tarefas e cumprimento de prazos durante o desenvolvimento das funcionalidades.
+
+* 🔄 **Adaptabilidade**
+  Facilidade em lidar com mudanças de requisitos e ajustes necessários ao longo do projeto.
+
+* 📌 **Responsabilidade**
+  Comprometimento com as entregas, garantindo a qualidade das funcionalidades desenvolvidas.
+
+* 🚀 **Proatividade**
+  Iniciativa na busca por soluções, participação ativa nas decisões e contribuição além das tarefas atribuídas.
+
+Essas soft skills foram fundamentais para o sucesso do projeto, contribuindo não apenas para a entrega técnica, mas também para a eficiência e organização da equipe como um todo.
+
