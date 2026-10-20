@@ -9,6 +9,7 @@ Este portfólio reúne os Projetos Integradores (API) desenvolvidos ao longo do 
 | 1º | Calculadora em VisualG | [Aplicacao_Projeto_Integragor_Fatec](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec) |
 | 2º | Gerenciador de Horários de Aula | [gerenciador-horario-aula](https://github.com/vp-p/gerenciador-horario-aula) |
 | 3º | DataSkill | [DataSkill](https://github.com/DataTechApi/DataSkill) |
+| 4º | DataAgenda | [DataAgenda](https://github.com/DataTechApi/DataAgenda) |
 
 ---
 
@@ -176,15 +177,15 @@ A equipe desenvolveu uma aplicação em Java com interface gráfica e banco de d
 
 ---
 
-# 🚀 Relatório do Projeto – API (3° Semestre)
-
----
+# 📊 Projeto 3 – DataSkill (3° Semestre)
 
 ## 📌 1. Introdução
 
 O Projeto DataSkill é uma plataforma interna inspirada no modelo do LinkedIn, desenvolvida para permitir que os colaboradores da empresa **registrem suas competências técnicas (hard skills), competências comportamentais (soft skills), experiências profissionais e certificações.**
 
 O principal objetivo da plataforma é **otimizar a gestão de talentos dentro da organização**, facilitando a identificação de profissionais com habilidades específicas para projetos, demandas internas ou oportunidades estratégicas.
+
+O projeto foi desenvolvido pela equipe **DataTech**, utilizando Scrum com entregas divididas em sprints.
 
 ---
 
@@ -330,4 +331,96 @@ Durante o desenvolvimento do projeto, adquiri e aprofundei conhecimentos técnic
 * 🧑‍💻 **Ambientes de Desenvolvimento (IDEs)**
   Ganhei experiência no uso de ferramentas como IntelliJ IDEA e Visual Studio Code para desenvolvimento, organização e depuração de código.
 
+---
 
+# 🛠️ Projeto 4 – DataAgenda (4° Semestre)
+
+## 📌 1. Introdução
+
+O DataAgenda é uma **aplicação web para gerenciamento de manutenções preventivas e corretivas** dos sistemas que compõem o ecossistema da empresa parceira. A plataforma permite agendar manutenções, abrir e acompanhar chamados, alocar técnicos responsáveis e gerar relatórios sobre o histórico de atendimentos.
+
+O projeto foi desenvolvido pela equipe **DataTech**, utilizando Scrum com 3 sprints e critérios de **DoR (Definition of Ready)** e **DoD (Definition of Done)** para garantir a qualidade das entregas.
+
+## 📖 2.1 Contexto do Cliente
+
+- 🏷️ **Nome do cliente:**
+  ALTAVE
+
+- 🏭 **Segmento de atuação:**
+  Tecnologia e Defesa — desenvolvimento e operação de aeróstatos e sistemas de monitoramento, que exigem manutenção constante para garantir disponibilidade e segurança.
+
+### 🎯 2.2 Necessidade Identificada
+
+A empresa não possuía um sistema que centralizasse a alocação, visualização e extração de dados sobre as manutenções dos sistemas de seus clientes, o que gerava:
+
+- Dificuldade em acompanhar **manutenções pendentes** e planejar as preventivas.
+- Falta de controle sobre **qual técnico** estava responsável por cada chamado.
+- Ausência de **histórico e rastreabilidade** das manutenções realizadas.
+- Pouca visibilidade para gestores sobre **indicadores e relatórios** de atendimento.
+
+### 💡 2.3 Solução Proposta pela Equipe
+
+* 🖥️ **Gestão de ativos** – cadastro, listagem, edição e remoção dos ativos e sistemas que passam por manutenção.
+
+* 📅 **Gestão de chamados** – agendamento de manutenções preventivas, abertura de chamados corretivos e atribuição de técnicos.
+
+* 👷 **Área do técnico** – visualização dos chamados atribuídos, atualização de status e registro de observações.
+
+* 📊 **Relatórios e monitoramento** – painel de chamados, histórico por ativo, estatísticas, agenda e visualização em mapa.
+
+* 🔐 **Usuários e permissões** – perfis de acesso para administrador, gestor e técnico.
+
+## 🧠 2.4 Tecnologias Utilizadas
+
+| Categoria | Tecnologias |
+|---|---|
+| **Back-end** | Java 21 · Spring Boot · JPA · Maven |
+| **Front-end** | Vue · TypeScript |
+| **Banco de Dados** | OracleDB |
+| **Documentação de API** | Swagger (OpenAPI) |
+| **Testes** | Postman |
+| **Ambiente de Desenvolvimento** | DevContainer |
+| **Controle de Versão** | Git · GitHub |
+| **IDEs** | IntelliJ IDEA · VS Code |
+
+---
+## 👨‍💻 3.0 Contribuições Pessoais
+
+* Correção da **responsividade das telas** para diferentes tamanhos de monitor (issue #21).
+
+* Desenvolvimento da **tela de login** seguindo o layout padrão do sistema (issue #30).
+
+* Implementação do **modo claro/escuro (dark/light mode)** em todas as telas da aplicação (issue #67).
+
+* Correção do bug em que **cancelar a edição de um cliente apagava todos os dados** do formulário (issue #75).
+
+* Integração das alterações nas branches de cada sprint, mantendo o código sincronizado com a equipe.
+
+---
+## 🤝 4.0 Soft Skills Desenvolvidas
+
+* 🤝 **Trabalho em equipe** – desenvolvimento colaborativo em branches por sprint, integrando o trabalho de vários membros.
+
+* 🗣️ **Comunicação** – alinhamento das tarefas por meio de issues e do quadro do projeto no GitHub.
+
+* 🎯 **Foco na experiência do usuário** – atenção a detalhes de usabilidade, como responsividade e tema claro/escuro.
+
+* 🧩 **Resolução de problemas** – investigação e correção de bugs reportados durante as sprints.
+
+* 📌 **Responsabilidade** – cumprimento dos critérios de DoR e DoD nas entregas.
+
+## 🛠️ 4.1 Hard Skills Desenvolvidas
+
+* 🌐 **Front-end com Vue e TypeScript** – criação de telas, componentes reutilizáveis e consumo da API REST.
+
+* 🎨 **CSS e responsividade** – adaptação de layouts para diferentes resoluções e implementação de temas (dark/light mode).
+
+* 💻 **Back-end (Java e Spring Boot)** – entendimento da arquitetura em camadas e da comunicação entre front-end e back-end.
+
+* 🗄️ **Banco de Dados (OracleDB)** – contato com um novo SGBD relacional e persistência de dados com JPA.
+
+* 🐳 **DevContainer** – padronização do ambiente de desenvolvimento da equipe.
+
+* 🔧 **Git e GitHub** – uso de branches por sprint, issues vinculadas aos commits e GitHub Projects.
+
+---
