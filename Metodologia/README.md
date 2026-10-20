@@ -370,17 +370,20 @@ A empresa não possuía um sistema que centralizasse a alocação, visualizaçã
 ---
 ## 👨‍💻 3.0 Contribuições Pessoais
 
-* Correção da **responsividade das telas** para diferentes tamanhos de monitor (issue #21).
+Atuei principalmente no **front-end**, em tarefas ligadas a issues do projeto. Todas as entregas podem ser conferidas no histórico de commits do repositório:
 
-* Desenvolvimento da **tela de login** seguindo o layout padrão do sistema (issue #30).
+| Entrega | O que eu fiz | Evidência |
+|---|---|---|
+| **Responsividade** (issue #21) | Refiz o layout da tela de técnicos com Flexbox (`display: flex`, `flex-wrap`, `min-width` e `max-width`), para que ela se adaptasse a monitores de tamanhos diferentes. | [`8938ce2`](https://github.com/DataTechApi/DataAgenda/commit/8938ce2fee90535ec512f6d4a7263b14cc5c3c1b) |
+| **Tela de login** (issue #30) | Criei a `LoginView.vue` com componentes do PrimeVue (`InputText`, `Password` e `Button`), estado reativo com `ref`, indicador de carregamento e mensagem de erro para credenciais inválidas, seguindo o layout padrão do sistema. | [`c829854`](https://github.com/DataTechApi/DataAgenda/commit/c829854ad3a4af3822d521cb312fa2417ac51dd4) |
+| **Proteção de rotas** (issue #30) | Adicionei a rota `/login` e um *navigation guard* (`router.beforeEach`) no Vue Router: sem token na sessão, o usuário é redirecionado para o login; já autenticado, ele vai direto para o dashboard. | [`c829854`](https://github.com/DataTechApi/DataAgenda/commit/c829854ad3a4af3822d521cb312fa2417ac51dd4) |
+| **Modo claro/escuro** (issue #67) | Criei a store `theme.ts` com **Pinia**, que guarda a preferência do usuário no `localStorage`; substituí as cores fixas por **variáveis CSS** (`--bg-app`, `--text-main` etc.) no `custom-theme.css` e configurei o `darkModeSelector` do PrimeVue. A mudança foi aplicada em **23 telas**, além do cabeçalho e do layout principal. | [`ac58691`](https://github.com/DataTechApi/DataAgenda/commit/ac586916ee2ed6a5955bb919dc1188a0c267d665) |
+| **Correção de bug** (issue #75) | Identifiquei que, ao cancelar a edição de um cliente, os dados do formulário eram perdidos. Corrigi guardando uma cópia do estado original (`clienteOriginal.value = { ...response.data }`) assim que os dados chegam da API, para restaurá-los no cancelamento. | [`608eb59`](https://github.com/DataTechApi/DataAgenda/commit/608eb59558d2c0ae2683f38d412491b64eb6aa56) |
 
-* Implementação do **modo claro/escuro (dark/light mode)** em todas as telas da aplicação (issue #67).
-
-* Correção do bug em que **cancelar a edição de um cliente apagava todos os dados** do formulário (issue #75).
-
-* Integração das alterações nas branches de cada sprint, mantendo o código sincronizado com a equipe.
+> A autenticação no back-end (Spring Security com JWT) foi implementada por outro integrante da equipe; minha parte no login foi a interface e o controle de acesso às rotas no front-end.
 
 ---
+
 ## 🤝 4.0 Soft Skills Desenvolvidas
 
 * 🤝 **Trabalho em equipe** – desenvolvimento colaborativo em branches por sprint, integrando o trabalho de vários membros.
@@ -395,16 +398,16 @@ A empresa não possuía um sistema que centralizasse a alocação, visualizaçã
 
 ## 🛠️ 4.1 Hard Skills Desenvolvidas
 
-* 🌐 **Front-end com Vue e TypeScript** – criação de telas, componentes reutilizáveis e consumo da API REST.
-
-* 🎨 **CSS e responsividade** – adaptação de layouts para diferentes resoluções e implementação de temas (dark/light mode).
-
-* 💻 **Back-end (Java e Spring Boot)** – entendimento da arquitetura em camadas e da comunicação entre front-end e back-end.
-
-* 🗄️ **Banco de Dados (OracleDB)** – contato com um novo SGBD relacional e persistência de dados com JPA.
-
-* 🐳 **DevContainer** – padronização do ambiente de desenvolvimento da equipe.
-
-* 🔧 **Git e GitHub** – uso de branches por sprint, issues vinculadas aos commits e GitHub Projects.
+| Habilidade | Por que posso afirmar que sei |
+|---|---|
+| 🌐 **Vue 3 (Composition API)** | Desenvolvi telas com `<script setup>`, estado reativo (`ref`) e ciclo de vida (`onMounted`), como a `LoginView.vue` e a aplicação do tema no `App.vue`. |
+| 🧭 **Vue Router** | Criei a rota de login e um *navigation guard* global com `router.beforeEach`, que controla o acesso às páginas conforme a autenticação. |
+| 🗂️ **Pinia (gerenciamento de estado)** | Implementei a store de tema (`useThemeStore`), compartilhada por toda a aplicação, com as funções `toggle` e `apply`. |
+| 🎨 **CSS (variáveis, Flexbox e temas)** | Construí o sistema de temas com variáveis CSS e transições, e resolvi a responsividade da tela de técnicos com Flexbox. |
+| 🧱 **PrimeVue** | Usei os componentes de formulário (`InputText`, `Password`, `Button`) e configurei o tema Aura com `darkModeSelector`. |
+| 💾 **Web Storage** | Usei o `localStorage` para persistir a preferência de tema entre acessos e o `sessionStorage` para guardar o token da sessão. |
+| 🟦 **TypeScript** | Escrevi a store de tema e as alterações do router em arquivos `.ts`. |
+| 🐞 **Depuração** | Encontrei e corrigi a causa da perda de dados ao cancelar a edição de cliente (issue #75), um problema de gerenciamento de estado. |
+| 🔧 **Git e GitHub** | Cada entrega está ligada a uma issue (#21, #30, #67 e #75) e foi integrada às branches das sprints. |
 
 ---
