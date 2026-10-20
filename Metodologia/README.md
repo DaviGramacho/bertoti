@@ -7,6 +7,7 @@ Este portfólio reúne os Projetos Integradores (API) desenvolvidos ao longo do 
 | Semestre | Projeto | Repositório |
 |---|---|---|
 | 1º | Calculadora em VisualG | [Aplicacao_Projeto_Integragor_Fatec](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec) |
+| 2º | Gerenciador de Horários de Aula | [gerenciador-horario-aula](https://github.com/vp-p/gerenciador-horario-aula) |
 | 3º | DataSkill | [DataSkill](https://github.com/DataTechApi/DataSkill) |
 
 ---
@@ -85,6 +86,93 @@ A equipe desenvolveu uma calculadora com menu em modo texto, oferecendo as segui
 * 🔧 **Controle de versão (Git e GitHub)** – primeiros commits, padronização de mensagens e colaboração em repositório compartilhado.
 
 * 📋 **Metodologia ágil** – uso de backlog do produto, priorização de requisitos e organização das tarefas no ClickUp.
+
+---
+
+# 🗓️ Projeto 2 – Sistema de Gerenciamento de Horários Fatec (2° Semestre)
+
+## 📌 1. Introdução
+
+O segundo Projeto Integrador foi o **Sistema de Gerenciamento de Horários Fatec**, uma aplicação desktop que permite ao coordenador de curso **montar a grade horária**, definindo os horários de cada professor e disciplina e evitando conflitos de alocação.
+
+O projeto foi desenvolvido pela equipe **SINAPSE**, na qual atuei como **Developer**, com o trabalho organizado em sprints (Kick-Off, Sprint 1, 2 e 3) e apresentação final na Feira de Soluções.
+
+## 📖 2.1 Contexto do Cliente
+
+- 🏷️ **Nome do cliente:**
+  Fatec São José dos Campos – coordenação de cursos.
+
+- 🏭 **Segmento de atuação:**
+  Educação – instituição pública de ensino superior tecnológico.
+
+### 🎯 2.2 Necessidade Identificada
+
+A montagem da grade de aulas era feita de forma manual, o que gerava dificuldades como:
+
+- Risco de **sobreposição de horários** (o mesmo professor alocado em duas disciplinas no mesmo horário).
+- Necessidade de respeitar a **quantidade obrigatória de aulas semanais** de cada disciplina.
+- Falta de um local centralizado para gerenciar **cursos, semestres, disciplinas e professores**.
+- Dificuldade em considerar a **disponibilidade de cada professor** na hora de alocar as aulas.
+
+### 💡 2.3 Solução Proposta pela Equipe
+
+A equipe desenvolveu uma aplicação em Java com interface gráfica e banco de dados relacional, oferecendo:
+
+* 🔐 **Login do coordenador** com e-mail e senha, incluindo fluxo de recuperação de senha.
+* 📚 **Cadastro de cursos, semestres, disciplinas e professores**.
+* 🗓️ **Grade horária em tabela**, facilitando a visualização e a distribuição das aulas.
+* 🚫 **Validação de conflitos**, impedindo choques de horário entre aulas do mesmo professor.
+* 👨‍🏫 **Disponibilidade dos professores**, permitindo filtrar dias e horários possíveis.
+* 📤 **Exportação da grade** para Excel.
+
+## 🧠 2.4 Tecnologias Utilizadas
+
+| Categoria | Tecnologias |
+|---|---|
+| **Linguagem / Interface** | Java 11 · JavaFX (FXML + CSS) |
+| **Banco de Dados** | MySQL (JDBC / padrão DAO) |
+| **Build** | Maven |
+| **Gestão do Projeto** | Jira · Slack |
+| **Controle de Versão** | Git · GitHub |
+| **IDE** | IntelliJ IDEA |
+
+---
+## 👨‍💻 3.0 Contribuições Pessoais
+
+* Desenvolvimento da **tela de login** do sistema.
+
+* Implementação do botão **"Esqueci minha senha"**, com redirecionamento para a tela de recuperação de senha.
+
+* Participação no **CRUD de cursos**, incluindo a integração da branch `CrudCursos` à main.
+
+* Alteração na **modelagem do banco de dados**, adicionando a coluna `Periodo` na tabela de cursos.
+
+* **Correção de versionamento**: reversão de commits com problema e reaplicação das alterações de forma organizada.
+
+---
+## 🤝 4.0 Soft Skills Desenvolvidas
+
+* 🤝 **Trabalho em equipe** – colaboração em um time maior, com papéis definidos de Product Owner, Scrum Master e Developers.
+
+* 🗣️ **Comunicação** – uso de canais como Slack e reuniões semanais para alinhar tarefas e reportar impedimentos.
+
+* 📌 **Responsabilidade e comprometimento** – cumprimento dos termos de permanência da equipe e dos prazos de cada sprint.
+
+* 🧩 **Resolução de problemas** – identificação e correção de erros de versionamento sem comprometer o trabalho do restante do time.
+
+## 🛠️ 4.1 Hard Skills Desenvolvidas
+
+* ☕ **Java e Programação Orientada a Objetos** – criação de classes de domínio, controllers e organização do código em camadas.
+
+* 🖥️ **Interfaces gráficas com JavaFX** – construção de telas com FXML e estilização com CSS.
+
+* 🗃️ **Banco de Dados (MySQL)** – modelagem relacional, criação e alteração de tabelas e acesso aos dados via JDBC com o padrão DAO.
+
+* 🧱 **Maven** – gerenciamento de dependências (JavaFX, conector MySQL, dotenv) e build do projeto.
+
+* 🔧 **Git e GitHub** – trabalho com branches, merges, reversão de commits e padronização de mensagens.
+
+* 📋 **Scrum com Jira** – organização do backlog em user stories, story points e acompanhamento das sprints.
 
 ---
 
