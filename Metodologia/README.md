@@ -258,23 +258,21 @@ A solução consiste em um sistema que permite:
 ---
 ## 👨‍💻 3.0 Contribuições Pessoais
 
-* Desenvolvimento da **feature #23 – API de Autoavaliação**, permitindo que colaboradores registrem suas próprias competências.
+Fui responsável pela **feature #23 – API de Autoavaliação**, desenvolvida por completo, em todas as camadas do back-end. As entregas podem ser conferidas no histórico de commits do repositório:
 
-* Implementação da **API REST**, incluindo definição de rotas, estrutura de requisições e respostas.
+| Entrega | O que eu fiz | Evidência |
+|---|---|---|
+| **Entidade `AutoAvaliacao`** | Mapeei a entidade com JPA (`@Entity`, `@Id`, `@GeneratedValue(strategy = GenerationType.IDENTITY)`) e usei Lombok (`@Data`, `@Builder`, `@NoArgsConstructor`, `@AllArgsConstructor`) para eliminar código repetitivo. | [`2d07ce7`](https://github.com/DataTechApi/DataSkill/commit/2d07ce745c8676293a32019bd889bf975574eca6) |
+| **Repositório** | Criei o `AutoAvaliacaoRepository` estendendo `JpaRepository`, que fornece as operações de banco (`save`, `findAll`, `findById`, `deleteById`) sem a necessidade de escrever SQL manualmente. | [`2d07ce7`](https://github.com/DataTechApi/DataSkill/commit/2d07ce745c8676293a32019bd889bf975574eca6) |
+| **Camada de serviço** | Implementei o `AutoAvaliacaoService` com as regras de cadastro, listagem, busca por ID e exclusão, recebendo o repositório por **injeção de dependência via construtor**. | [`2d07ce7`](https://github.com/DataTechApi/DataSkill/commit/2d07ce745c8676293a32019bd889bf975574eca6) |
+| **Controller REST** | Criei o `AutoAvaliacaoController` em `/autoAvaliacao`, com os endpoints `POST` (retorna **201 Created**), `GET`, `GET /{id}` e `DELETE` (retorna **204 No Content**), usando `ResponseEntity` para controlar o status HTTP de cada resposta. | [`2d07ce7`](https://github.com/DataTechApi/DataSkill/commit/2d07ce745c8676293a32019bd889bf975574eca6) |
+| **Documentação da API** | Documentei cada endpoint no Swagger com `@Tag`, `@Operation` e `@ApiResponses`, descrevendo o objetivo e os códigos de resposta. | [`2d07ce7`](https://github.com/DataTechApi/DataSkill/commit/2d07ce745c8676293a32019bd889bf975574eca6) |
+| **Estrutura inicial da feature** | Criei a estrutura de pacotes da funcionalidade (controller, entity, repository e service), seguindo a arquitetura definida pela equipe. | [`c39c893`](https://github.com/DataTechApi/DataSkill/commit/c39c8931cff560c4b88eb5419fb3c6bab09b5be3) |
 
-* Criação da **lógica de negócio** para processamento e armazenamento das autoavaliações.
-
-* Integração da funcionalidade com o sistema, garantindo consistência com os demais módulos.
-
-* Contribuição na **modelagem da solução**, auxiliando na definição de como os dados de autoavaliação seriam utilizados.
-
-* Participação no **versionamento do projeto**, seguindo boas práticas de commits.
-
-* Colaboração com a equipe no desenvolvimento da solução, alinhando a funcionalidade às necessidades do projeto.
-
-* Apoio na geração de **dados estratégicos**, contribuindo para análise de competências e tomada de decisão.
+Além do código, participei das definições de modelagem da solução com a equipe, discutindo como os dados de autoavaliação seriam usados na análise de competências.
 
 ---
+
 ## 🤝 4.0 Soft Skills Desenvolvidas
 
 Durante o desenvolvimento do projeto DataSkill, foi possível aprimorar diversas competências comportamentais essenciais para o trabalho em equipe e desenvolvimento de software:
@@ -304,34 +302,18 @@ Essas soft skills foram fundamentais para o sucesso do projeto, contribuindo nã
 
 ## 🛠️ 4.1 Hard Skills Desenvolvidas
 
-Durante o desenvolvimento do projeto, adquiri e aprofundei conhecimentos técnicos importantes, aplicando na prática diversas tecnologias utilizadas no mercado:
+| Habilidade | Por que posso afirmar que sei |
+|---|---|
+| 💻 **Spring Boot (API REST)** | Criei um controller completo com `@RestController`, `@RequestMapping`, `@PostMapping`, `@GetMapping`, `@DeleteMapping`, `@PathVariable` e `@RequestBody`, retornando os status HTTP adequados (201, 200 e 204). |
+| 🏛️ **Arquitetura em camadas** | Separei a feature em controller → service → repository, com cada camada tendo uma única responsabilidade e as dependências injetadas pelo construtor. |
+| 🗄️ **JPA / Hibernate (ORM)** | Mapeei a entidade `AutoAvaliacao` com geração automática de ID e usei o `JpaRepository` para persistir e consultar os dados sem SQL manual. |
+| ✂️ **Lombok** | Usei `@Data`, `@Builder` e os construtores gerados automaticamente para manter a entidade enxuta. |
+| 📄 **Swagger / OpenAPI** | Documentei todos os endpoints da autoavaliação com anotações do OpenAPI, deixando-os testáveis pela interface do Swagger. |
+| 🗃️ **MySQL** | Configurei a conexão com o banco MySQL no IntelliJ (Data Sources) para acompanhar a tabela gerada a partir da entidade. |
+| 🧪 **Testes de API (Postman)** | Testei os endpoints da autoavaliação (cadastro, listagem, busca por ID e exclusão), validando as respostas e os códigos de status. |
+| 🔧 **Git e GitHub** | Desenvolvi a feature vinculada à issue #23, com commits padronizados e integrados às branches das sprints. |
 
-* 💻 **Back-end (Java e Spring Boot)**
-  Aprendi a desenvolver APIs REST utilizando Java 21 com Spring Boot, estruturando aplicações de forma organizada, criando controllers, services e aplicando boas práticas de desenvolvimento.
-
-* 🗄️ **Persistência de Dados (JPA / Hibernate)**
-  Desenvolvi conhecimentos em mapeamento objeto-relacional (ORM), entendendo como entidades se relacionam com o banco de dados e como realizar operações de forma eficiente.
-
-* 🧱 **Gerenciamento de Dependências (Maven)**
-  Aprendi a gerenciar dependências, configurar o projeto e entender o ciclo de build utilizando Maven.
-
-* 🌐 **Integração com Front-end (Angular)**
-  Compreendi como funciona a comunicação entre front-end e back-end, trabalhando com requisições HTTP e integração de APIs.
-
-* 🗃️ **Banco de Dados (MySQL)**
-  Aprendi a modelar tabelas, estruturar dados e realizar consultas em banco de dados relacional.
-
-* 📄 **Documentação de API (Swagger / OpenAPI)**
-  Entendi a importância da documentação de APIs e como utilizá-la para facilitar testes e o uso por outros desenvolvedores.
-
-* 🧪 **Testes de API (Postman)**
-  Desenvolvi habilidades para testar endpoints, validar respostas e garantir o correto funcionamento da aplicação.
-
-* 🔧 **Controle de Versão (Git e GitHub)**
-  Aprendi a trabalhar com versionamento de código, commits, branches e colaboração em equipe utilizando Git e GitHub.
-
-* 🧑‍💻 **Ambientes de Desenvolvimento (IDEs)**
-  Ganhei experiência no uso de ferramentas como IntelliJ IDEA e Visual Studio Code para desenvolvimento, organização e depuração de código.
+> O front-end do DataSkill (Angular) foi desenvolvido por outros integrantes; meu foco neste projeto foi o back-end.
 
 ---
 
