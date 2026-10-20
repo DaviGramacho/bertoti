@@ -57,17 +57,17 @@ A equipe desenvolveu uma calculadora com menu em modo texto, oferecendo as segui
 ---
 ## 👨‍💻 3.0 Contribuições Pessoais
 
-* Implementação da **função de multiplicação** entre as operações básicas da calculadora.
+Todas as entregas abaixo podem ser conferidas no histórico de commits do repositório:
 
-* Desenvolvimento da **função de concatenação de duas strings** (item 11 do backlog).
-
-* **Organização e indentação dos procedimentos** do código, melhorando a legibilidade do algoritmo.
-
-* Atualização da **documentação (README)** do repositório.
-
-* Participação nas cerimônias da sprint (planejamento, review e retrospectiva) junto à equipe.
+| Entrega | O que eu fiz | Evidência |
+|---|---|---|
+| **Multiplicação** (backlog ID 2 – Sprint 1) | Criei o procedimento `multiplicar()` e o liguei à opção 03 do menu de operações básicas, reaproveitando a leitura dos números feita pelo procedimento `lerOperacoesBasicas()`. | [`be9bf68`](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec/commit/be9bf689e9c6a0ae83788ebc58c4237ab308d274) |
+| **Concatenação de strings** (backlog ID 11 – Sprint 3) | Criei o procedimento `concatenacaoString()`, que lê duas partes de texto, **valida se as duas foram preenchidas** (exibindo uma mensagem de erro caso contrário) e mostra o resultado. Também incluí a opção 07 no menu principal. | [`0e2eee8`](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec/commit/0e2eee8316257dc75f151b6b7ac5ad60b6a9dcef) |
+| **Organização do código** | Reorganizei e indentei os procedimentos no final do algoritmo, deixando o menu principal mais limpo e o código mais fácil de manter por toda a equipe. | [`0e2eee8`](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec/commit/0e2eee8316257dc75f151b6b7ac5ad60b6a9dcef) |
+| **Documentação** | Reestruturei o README do repositório, organizando backlog, sprints, requisitos e tecnologias. | [`f37b8db`](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec/commit/f37b8db197dde73e39ecd0786cc00a07bc39a0c4) |
 
 ---
+
 ## 🤝 4.0 Soft Skills Desenvolvidas
 
 * 🤝 **Trabalho em equipe** – primeira experiência dividindo tarefas e integrando o código de vários membros em um único projeto.
@@ -80,13 +80,13 @@ A equipe desenvolveu uma calculadora com menu em modo texto, oferecendo as segui
 
 ## 🛠️ 4.1 Hard Skills Desenvolvidas
 
-* 🧩 **Lógica de programação** – uso de variáveis, estruturas condicionais, laços de repetição e procedimentos em Portugol.
-
-* 🔢 **Algoritmos matemáticos** – implementação de operações aritméticas, fatorial, conversão de bases e cálculos financeiros.
-
-* 🔧 **Controle de versão (Git e GitHub)** – primeiros commits, padronização de mensagens e colaboração em repositório compartilhado.
-
-* 📋 **Metodologia ágil** – uso de backlog do produto, priorização de requisitos e organização das tarefas no ClickUp.
+| Habilidade | Por que posso afirmar que sei |
+|---|---|
+| 🧩 **Lógica de programação e modularização** | Escrevi procedimentos completos em Portugol, com entrada (`leia`), processamento e saída (`escreval`), e os integrei ao menu usando estruturas condicionais `se/senao` aninhadas. |
+| ✅ **Validação de entrada** | Na concatenação, tratei o caso em que o usuário deixa uma das partes vazia, impedindo um resultado incorreto e orientando o usuário com uma mensagem de erro. |
+| 🧹 **Código limpo e manutenível** | Separei cada operação em seu próprio procedimento e reorganizei a indentação do arquivo, o que facilitou que outros integrantes adicionassem novas operações. |
+| 🔧 **Git e GitHub** | Fiz meus primeiros commits em um repositório compartilhado, já seguindo o padrão de mensagens com tipo e emoji (`:sparkles: feat`, `📚 docs`). |
+| 📋 **Scrum** | Minhas entregas correspondem a itens do backlog do produto (IDs 2 e 11), entregues dentro das sprints planejadas. |
 
 ---
 
