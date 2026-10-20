@@ -1,3 +1,93 @@
+# 📂 Portfólio – Projetos Integradores (API)
+
+Este portfólio reúne os Projetos Integradores (API) desenvolvidos ao longo do curso na Fatec, utilizando a metodologia ágil **Scrum**, com entregas divididas em sprints e acompanhamento de backlog. Em cada projeto são apresentados o contexto, a solução desenvolvida, as tecnologias utilizadas, minhas contribuições pessoais e as competências desenvolvidas.
+
+## 📑 Índice
+
+| Semestre | Projeto | Repositório |
+|---|---|---|
+| 1º | Calculadora em VisualG | [Aplicacao_Projeto_Integragor_Fatec](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec) |
+| 3º | DataSkill | [DataSkill](https://github.com/DataTechApi/DataSkill) |
+
+---
+
+# 🧮 Projeto 1 – Calculadora em VisualG (1° Semestre)
+
+## 📌 1. Introdução
+
+O primeiro Projeto Integrador consistiu no desenvolvimento de uma **calculadora em VisualG (Portugol)** com interface de texto, capaz de realizar desde operações matemáticas básicas até cálculos mais elaborados, como fatorial, função de segundo grau, conversão de bases numéricas e juros.
+
+O projeto foi desenvolvido pela equipe **The Buggers** e teve como foco principal o primeiro contato com a lógica de programação e com a metodologia ágil, organizando o trabalho em **3 sprints**.
+
+## 📖 2.1 Contexto
+
+- 🏷️ **Cliente:**
+  Fatec – projeto acadêmico do 1° semestre de Banco de Dados.
+
+- 🎯 **Objetivo:**
+  Aplicar na prática os conceitos de algoritmos e lógica de programação aprendidos no semestre, além de introduzir o trabalho em equipe com Scrum, backlog e controle de versão.
+
+### 🎯 2.2 Necessidade Identificada
+
+- Construir um software funcional utilizando apenas os recursos de uma linguagem algorítmica (Portugol).
+- Organizar as funcionalidades em um backlog priorizado e entregá-las de forma incremental.
+- Garantir que o código fosse legível e organizado em procedimentos, facilitando a manutenção pela equipe.
+
+### 💡 2.3 Solução Proposta pela Equipe
+
+A equipe desenvolveu uma calculadora com menu em modo texto, oferecendo as seguintes operações:
+
+* ➕ **Operações básicas** – soma, subtração, multiplicação e divisão, incluindo múltiplas operações em sequência.
+* ❗ **Cálculo fatorial** de um número.
+* 📐 **Função de segundo grau** (cálculo das raízes).
+* 🔢 **Conversão de bases numéricas** – B10 ↔ B2, B2 ↔ B8 e B2 ↔ B16.
+* 🔤 **Concatenação de duas strings**.
+* 💰 **Juros simples e juros compostos**.
+
+## 🧠 2.4 Tecnologias Utilizadas
+
+| Categoria | Tecnologias |
+|---|---|
+| **Linguagem** | VisualG (Portugol) |
+| **Gestão do Projeto** | ClickUp |
+| **Controle de Versão** | Git · GitHub |
+
+---
+## 👨‍💻 3.0 Contribuições Pessoais
+
+* Implementação da **função de multiplicação** entre as operações básicas da calculadora.
+
+* Desenvolvimento da **função de concatenação de duas strings** (item 11 do backlog).
+
+* **Organização e indentação dos procedimentos** do código, melhorando a legibilidade do algoritmo.
+
+* Atualização da **documentação (README)** do repositório.
+
+* Participação nas cerimônias da sprint (planejamento, review e retrospectiva) junto à equipe.
+
+---
+## 🤝 4.0 Soft Skills Desenvolvidas
+
+* 🤝 **Trabalho em equipe** – primeira experiência dividindo tarefas e integrando o código de vários membros em um único projeto.
+
+* 🗣️ **Comunicação** – alinhamento com a equipe durante as sprints e nas reuniões de review.
+
+* ⏱️ **Organização e gestão de tempo** – cumprimento das entregas dentro do prazo de cada sprint.
+
+* 📚 **Aprendizado contínuo** – adaptação rápida a uma nova forma de trabalho (Scrum) e a novas ferramentas.
+
+## 🛠️ 4.1 Hard Skills Desenvolvidas
+
+* 🧩 **Lógica de programação** – uso de variáveis, estruturas condicionais, laços de repetição e procedimentos em Portugol.
+
+* 🔢 **Algoritmos matemáticos** – implementação de operações aritméticas, fatorial, conversão de bases e cálculos financeiros.
+
+* 🔧 **Controle de versão (Git e GitHub)** – primeiros commits, padronização de mensagens e colaboração em repositório compartilhado.
+
+* 📋 **Metodologia ágil** – uso de backlog do produto, priorização de requisitos e organização das tarefas no ClickUp.
+
+---
+
 # 🚀 Relatório do Projeto – API (3° Semestre)
 
 ---
