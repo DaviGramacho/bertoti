@@ -166,7 +166,9 @@ A equipe desenvolveu uma aplicação em Java com interface gráfica e banco de d
 ---
 ## 👨‍💻 3.0 Contribuições Pessoais
 
-Todas as entregas abaixo podem ser conferidas no histórico de commits do repositório:
+No segundo semestre, fiquei responsável pela entrada do sistema (tela de login e recuperação de senha) e por **todo o módulo de cursos, da tela ao banco de dados**. Também resolvi um problema de versionamento que poderia ter feito a equipe perder trabalho.
+
+Cada entrega pode ser conferida no commit indicado:
 
 | Entrega | O que eu fiz | Evidência |
 |---|---|---|
@@ -192,16 +194,55 @@ Todas as entregas abaixo podem ser conferidas no histórico de commits do reposi
 
 ## 🛠️ 4.1 Hard Skills Desenvolvidas
 
-| Habilidade | Por que posso afirmar que sei |
-|---|---|
-| ☕ **Java e Orientação a Objetos** | Modelei a classe `Curso` com encapsulamento (atributos privados, getters e setters) e *properties* do JavaFX (`StringProperty`, `BooleanProperty`), que ligam os dados diretamente à tabela da tela. |
-| 🖥️ **JavaFX** | Criei telas em FXML e em código, controllers com `@FXML`, `TableView` com `setCellValueFactory`, janelas modais (`Modality.APPLICATION_MODAL`) e alertas (`Alert`) de aviso, erro e confirmação. |
-| 🗃️ **SQL e JDBC** | Escrevi as consultas do CRUD de cursos com `PreparedStatement` (consultas parametrizadas, que evitam SQL Injection) e implementei a exclusão lógica com uma coluna `deletado`. |
-| 🧱 **Padrão DAO e separação de responsabilidades** | Isolei o acesso ao banco no `CursoDAO`, deixando o `CadastroCursoController` responsável apenas pela interação com a tela. |
-| 🔁 **Streams e coleções do Java** | Usei `stream().filter(...).collect(...)` e `anyMatch` para a exclusão em lote, e `FilteredList` com `setPredicate` para o filtro por coordenador. |
-| 📐 **Modelagem de dados** | Alterei o modelo relacional no MySQL Workbench, adicionando a coluna `periodo` à tabela `curso`. |
-| 🔧 **Git (branches, merge e revert)** | Trabalhei na branch `CrudCursos`, fiz o merge na `main` e corrigi um erro de versionamento revertendo commits e reaplicando as alterações. |
-| 📋 **Scrum com Jira** | Minhas tarefas correspondem às histórias de usuário do backlog (SIN-9 – cadastro de cursos e SIN-14 – login), acompanhadas no Jira durante as sprints. |
+Para cada habilidade, explico o que construí e por que fiz daquela forma, com o link do commit como evidência.
+
+#### ☕ Java e Orientação a Objetos
+
+**Por que sei usar:** Modelei a classe `Curso` com atributos privados, getters e setters e dois construtores: um para os dados que vêm do banco e outro para um novo cadastro. Usei as *properties* do JavaFX (`StringProperty`, `BooleanProperty`) para que a tabela se atualizasse automaticamente quando os dados mudassem.
+
+**Onde comprovar:** [`ecb7267`](https://github.com/vp-p/gerenciador-horario-aula/commit/ecb726787b3aea75bdb3549d6ed916c599905229) · [`661ad37`](https://github.com/vp-p/gerenciador-horario-aula/commit/661ad370bb8454279d9fc2a494614028cff716c4)
+
+#### 🖥️ JavaFX
+
+**Por que sei usar:** Construí a tela de login inteira em código (`VBox`, `TextField`, `PasswordField`, `Stage`) e a tela de cursos em FXML com controller (`@FXML`). Implementei recursos de interação como mostrar/ocultar a senha, tabela com checkbox de seleção (`setCellValueFactory`), janelas modais (`Modality.APPLICATION_MODAL`) e alertas de aviso, erro e confirmação antes de excluir.
+
+**Onde comprovar:** [`0c67a91`](https://github.com/vp-p/gerenciador-horario-aula/commit/0c67a9141df64c307d4bfb09f165c17cffabc8fb) · [`de5e526`](https://github.com/vp-p/gerenciador-horario-aula/commit/de5e5268216ae06e18f9d6dbe8a12d710650fc4e) · [`ecb7267`](https://github.com/vp-p/gerenciador-horario-aula/commit/ecb726787b3aea75bdb3549d6ed916c599905229) · [`9d3bfed`](https://github.com/vp-p/gerenciador-horario-aula/commit/9d3bfed79ddd117bb2410f98c23b398dcb21f7ac)
+
+#### 🗃️ SQL e JDBC
+
+**Por que sei usar:** Escrevi as operações do CRUD de cursos com `PreparedStatement`, usando parâmetros (`?`) em vez de concatenar strings, o que protege contra SQL Injection. Implementei a **exclusão lógica** (`UPDATE curso SET deletado = 1`) e a listagem apenas dos registros ativos (`WHERE deletado = 0`), mantendo o histórico no banco.
+
+**Onde comprovar:** [`9d3bfed`](https://github.com/vp-p/gerenciador-horario-aula/commit/9d3bfed79ddd117bb2410f98c23b398dcb21f7ac)
+
+#### 🧱 Padrão DAO
+
+**Por que sei usar:** Isolei todo o acesso ao banco no `CursoDAO`. O controller só chama `criar`, `listarTodos` e `delete`, sem conhecer o SQL; assim, uma mudança no banco não afeta a tela.
+
+**Onde comprovar:** [`9d3bfed`](https://github.com/vp-p/gerenciador-horario-aula/commit/9d3bfed79ddd117bb2410f98c23b398dcb21f7ac)
+
+#### 🔁 Streams e coleções do Java
+
+**Por que sei usar:** Na exclusão em lote, usei `anyMatch` para verificar se havia algum curso selecionado e `stream().filter(...).collect(...)` para montar a lista a excluir. No filtro por coordenador, usei `FilteredList` com `setPredicate`, filtrando a tabela sem precisar de uma nova consulta ao banco.
+
+**Onde comprovar:** [`9d3bfed`](https://github.com/vp-p/gerenciador-horario-aula/commit/9d3bfed79ddd117bb2410f98c23b398dcb21f7ac)
+
+#### 📐 Modelagem de dados
+
+**Por que sei usar:** Alterei o modelo relacional no MySQL Workbench, adicionando a coluna `periodo` à tabela `curso`, e ajustei a classe, o DAO e a tela para trabalhar com o novo campo.
+
+**Onde comprovar:** [`c3146e1`](https://github.com/vp-p/gerenciador-horario-aula/commit/c3146e1fffdb7589f3fbb247a297d9fdca8a9fd1) · [`661ad37`](https://github.com/vp-p/gerenciador-horario-aula/commit/661ad370bb8454279d9fc2a494614028cff716c4) · [`9d3bfed`](https://github.com/vp-p/gerenciador-horario-aula/commit/9d3bfed79ddd117bb2410f98c23b398dcb21f7ac)
+
+#### 🔧 Git (branches, merge e revert)
+
+**Por que sei usar:** Trabalhei na branch `CrudCursos` e fiz o merge na `main`. Quando um erro de versionamento deixou o código inconsistente, reverti os commits afetados e reapliquei as alterações completas, sem perder o trabalho de ninguém. Saber desfazer e refazer alterações com segurança é essencial no trabalho em equipe.
+
+**Onde comprovar:** [`055d054`](https://github.com/vp-p/gerenciador-horario-aula/commit/055d0541b52c807e844c77e5c184390747105f09) · [`661ad37`](https://github.com/vp-p/gerenciador-horario-aula/commit/661ad370bb8454279d9fc2a494614028cff716c4) · [`9d3bfed`](https://github.com/vp-p/gerenciador-horario-aula/commit/9d3bfed79ddd117bb2410f98c23b398dcb21f7ac)
+
+#### 📋 Scrum com Jira
+
+**Por que sei usar:** Minhas entregas correspondem às histórias de usuário SIN-9 (cadastro de cursos) e SIN-14 (login), acompanhadas no Jira durante as sprints.
+
+**Onde comprovar:** [`0c67a91`](https://github.com/vp-p/gerenciador-horario-aula/commit/0c67a9141df64c307d4bfb09f165c17cffabc8fb) · [`9d3bfed`](https://github.com/vp-p/gerenciador-horario-aula/commit/9d3bfed79ddd117bb2410f98c23b398dcb21f7ac)
 
 ---
 
