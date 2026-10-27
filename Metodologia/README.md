@@ -57,7 +57,9 @@ A equipe desenvolveu uma calculadora com menu em modo texto, oferecendo as segui
 ---
 ## 👨‍💻 3.0 Contribuições Pessoais
 
-Todas as entregas abaixo podem ser conferidas no histórico de commits do repositório:
+Neste primeiro projeto, fui responsável por duas operações da calculadora, pela organização do código e pela documentação do repositório. Foi meu primeiro contato com o desenvolvimento em equipe, e as entregas abaixo mostram como apliquei na prática a lógica de programação aprendida no semestre.
+
+Cada entrega pode ser conferida no commit indicado:
 
 | Entrega | O que eu fiz | Evidência |
 |---|---|---|
@@ -80,13 +82,37 @@ Todas as entregas abaixo podem ser conferidas no histórico de commits do reposi
 
 ## 🛠️ 4.1 Hard Skills Desenvolvidas
 
-| Habilidade | Por que posso afirmar que sei |
-|---|---|
-| 🧩 **Lógica de programação e modularização** | Escrevi procedimentos completos em Portugol, com entrada (`leia`), processamento e saída (`escreval`), e os integrei ao menu usando estruturas condicionais `se/senao` aninhadas. |
-| ✅ **Validação de entrada** | Na concatenação, tratei o caso em que o usuário deixa uma das partes vazia, impedindo um resultado incorreto e orientando o usuário com uma mensagem de erro. |
-| 🧹 **Código limpo e manutenível** | Separei cada operação em seu próprio procedimento e reorganizei a indentação do arquivo, o que facilitou que outros integrantes adicionassem novas operações. |
-| 🔧 **Git e GitHub** | Fiz meus primeiros commits em um repositório compartilhado, já seguindo o padrão de mensagens com tipo e emoji (`:sparkles: feat`, `📚 docs`). |
-| 📋 **Scrum** | Minhas entregas correspondem a itens do backlog do produto (IDs 2 e 11), entregues dentro das sprints planejadas. |
+Para cada habilidade, explico o que construí e por que fiz daquela forma, com o link do commit como evidência.
+
+#### 🧩 Lógica de programação e modularização
+
+**Por que sei usar:** Implementei os procedimentos `multiplicar()` e `concatenacaoString()`, cada um com entrada de dados (`leia`), processamento e saída (`escreval`). Para integrá-los, precisei entender o fluxo do menu principal, construído com estruturas `se/senao` aninhadas, e encaixar as novas opções (03 e 07) sem quebrar as operações que já existiam.
+
+**Onde comprovar:** [`be9bf68`](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec/commit/be9bf689e9c6a0ae83788ebc58c4237ab308d274) · [`0e2eee8`](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec/commit/0e2eee8316257dc75f151b6b7ac5ad60b6a9dcef)
+
+#### ✅ Validação de entrada
+
+**Por que sei usar:** Na concatenação, não me limitei a juntar os textos: verifiquei se as duas partes foram digitadas e, se alguma estivesse vazia, exibi uma mensagem de erro em vez de um resultado incorreto. Isso mostra preocupação com o uso real do programa, e não só com o caso em que tudo dá certo.
+
+**Onde comprovar:** [`0e2eee8`](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec/commit/0e2eee8316257dc75f151b6b7ac5ad60b6a9dcef)
+
+#### 🧹 Organização e legibilidade do código
+
+**Por que sei usar:** Reorganizei e indentei os procedimentos no final do algoritmo. Com o código separado por operação, os outros integrantes conseguiam localizar e adicionar novas funções sem conflitos.
+
+**Onde comprovar:** [`0e2eee8`](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec/commit/0e2eee8316257dc75f151b6b7ac5ad60b6a9dcef)
+
+#### 🔧 Git e GitHub
+
+**Por que sei usar:** Fiz meus commits em um repositório compartilhado seguindo, desde o início, um padrão de mensagens (`:sparkles: feat`, `📚 docs`) que mantive em todos os projetos seguintes. Também reestruturei o README do repositório com backlog, sprints e requisitos.
+
+**Onde comprovar:** [`be9bf68`](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec/commit/be9bf689e9c6a0ae83788ebc58c4237ab308d274) · [`0e2eee8`](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec/commit/0e2eee8316257dc75f151b6b7ac5ad60b6a9dcef) · [`f37b8db`](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec/commit/f37b8db197dde73e39ecd0786cc00a07bc39a0c4)
+
+#### 📋 Scrum
+
+**Por que sei usar:** Minhas entregas correspondem a itens do backlog do produto (ID 2 na Sprint 1 e ID 11 na Sprint 3), planejados com a equipe e apresentados nas sprint reviews.
+
+**Onde comprovar:** [`be9bf68`](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec/commit/be9bf689e9c6a0ae83788ebc58c4237ab308d274) · [`0e2eee8`](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec/commit/0e2eee8316257dc75f151b6b7ac5ad60b6a9dcef)
 
 ---
 
