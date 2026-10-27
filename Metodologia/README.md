@@ -325,7 +325,9 @@ A solução consiste em um sistema que permite:
 ---
 ## 👨‍💻 3.0 Contribuições Pessoais
 
-Fui responsável pela **feature #23 – API de Autoavaliação**, desenvolvida por completo, em todas as camadas do back-end. As entregas podem ser conferidas no histórico de commits do repositório:
+No DataSkill, assumi uma **funcionalidade inteira do back-end**, a API de Autoavaliação (issue #23), e a desenvolvi em todas as camadas: entidade e banco de dados, regras de negócio, endpoints REST e documentação.
+
+Cada entrega pode ser conferida no commit indicado:
 
 | Entrega | O que eu fiz | Evidência |
 |---|---|---|
@@ -369,16 +371,55 @@ Essas soft skills foram fundamentais para o sucesso do projeto, contribuindo nã
 
 ## 🛠️ 4.1 Hard Skills Desenvolvidas
 
-| Habilidade | Por que posso afirmar que sei |
-|---|---|
-| 💻 **Spring Boot (API REST)** | Criei um controller completo com `@RestController`, `@RequestMapping`, `@PostMapping`, `@GetMapping`, `@DeleteMapping`, `@PathVariable` e `@RequestBody`, retornando os status HTTP adequados (201, 200 e 204). |
-| 🏛️ **Arquitetura em camadas** | Separei a feature em controller → service → repository, com cada camada tendo uma única responsabilidade e as dependências injetadas pelo construtor. |
-| 🗄️ **JPA / Hibernate (ORM)** | Mapeei a entidade `AutoAvaliacao` com geração automática de ID e usei o `JpaRepository` para persistir e consultar os dados sem SQL manual. |
-| ✂️ **Lombok** | Usei `@Data`, `@Builder` e os construtores gerados automaticamente para manter a entidade enxuta. |
-| 📄 **Swagger / OpenAPI** | Documentei todos os endpoints da autoavaliação com anotações do OpenAPI, deixando-os testáveis pela interface do Swagger. |
-| 🗃️ **MySQL** | Configurei a conexão com o banco MySQL no IntelliJ (Data Sources) para acompanhar a tabela gerada a partir da entidade. |
-| 🧪 **Testes de API (Postman)** | Testei os endpoints da autoavaliação (cadastro, listagem, busca por ID e exclusão), validando as respostas e os códigos de status. |
-| 🔧 **Git e GitHub** | Desenvolvi a feature vinculada à issue #23, com commits padronizados e integrados às branches das sprints. |
+Para cada habilidade, explico o que construí e por que fiz daquela forma, com o link do commit como evidência.
+
+#### 💻 Spring Boot (API REST)
+
+**Por que sei usar:** Criei o `AutoAvaliacaoController` com `@RestController`, `@RequestMapping("/autoAvaliacao")` e os endpoints `@PostMapping`, `@GetMapping`, `@GetMapping("/{id}")` e `@DeleteMapping`. Usei `ResponseEntity` para devolver o status HTTP correto de cada operação: **201 Created** no cadastro, **200 OK** nas consultas e **204 No Content** na exclusão.
+
+**Onde comprovar:** [`2d07ce7`](https://github.com/DataTechApi/DataSkill/commit/2d07ce745c8676293a32019bd889bf975574eca6)
+
+#### 🏛️ Arquitetura em camadas e injeção de dependência
+
+**Por que sei usar:** Separei a funcionalidade em controller (recebe a requisição), service (regras de negócio) e repository (acesso ao banco). As dependências são recebidas pelo construtor, prática recomendada pelo Spring porque deixa explícito do que cada classe depende e facilita os testes.
+
+**Onde comprovar:** [`c39c893`](https://github.com/DataTechApi/DataSkill/commit/c39c8931cff560c4b88eb5419fb3c6bab09b5be3) · [`2d07ce7`](https://github.com/DataTechApi/DataSkill/commit/2d07ce745c8676293a32019bd889bf975574eca6)
+
+#### 🗄️ JPA / Hibernate (ORM)
+
+**Por que sei usar:** Mapeei a entidade `AutoAvaliacao` com `@Entity`, `@Id` e `@GeneratedValue(strategy = GenerationType.IDENTITY)`, deixando o banco gerar a chave. Com o `JpaRepository`, usei `save`, `findAll`, `findById` e `deleteById` sem precisar escrever SQL.
+
+**Onde comprovar:** [`2d07ce7`](https://github.com/DataTechApi/DataSkill/commit/2d07ce745c8676293a32019bd889bf975574eca6)
+
+#### ✂️ Lombok
+
+**Por que sei usar:** Usei `@Data`, `@Builder`, `@NoArgsConstructor` e `@AllArgsConstructor` para gerar getters, setters e construtores automaticamente, deixando a entidade com poucas linhas e foco nos atributos.
+
+**Onde comprovar:** [`2d07ce7`](https://github.com/DataTechApi/DataSkill/commit/2d07ce745c8676293a32019bd889bf975574eca6)
+
+#### 📄 Swagger / OpenAPI
+
+**Por que sei usar:** Documentei cada endpoint com `@Tag`, `@Operation` e `@ApiResponses`, informando o objetivo e os códigos de resposta. Com isso, qualquer integrante podia testar a API pela interface do Swagger sem precisar ler o código.
+
+**Onde comprovar:** [`2d07ce7`](https://github.com/DataTechApi/DataSkill/commit/2d07ce745c8676293a32019bd889bf975574eca6)
+
+#### 🗃️ MySQL
+
+**Por que sei usar:** Configurei a conexão com o banco MySQL no IntelliJ (Data Sources) para conferir a tabela gerada a partir da entidade e os dados gravados pelos endpoints.
+
+**Onde comprovar:** [`2d07ce7`](https://github.com/DataTechApi/DataSkill/commit/2d07ce745c8676293a32019bd889bf975574eca6)
+
+#### 🧪 Testes de API (Postman)
+
+**Por que sei usar:** Testei o cadastro, a listagem, a busca por ID e a exclusão, validando o corpo e o código de status de cada resposta antes de integrar a funcionalidade.
+
+**Onde comprovar:** [`2d07ce7`](https://github.com/DataTechApi/DataSkill/commit/2d07ce745c8676293a32019bd889bf975574eca6)
+
+#### 🔧 Git e GitHub
+
+**Por que sei usar:** Desenvolvi a funcionalidade vinculada à issue #23, com commits padronizados e integrados às branches das sprints.
+
+**Onde comprovar:** [`c39c893`](https://github.com/DataTechApi/DataSkill/commit/c39c8931cff560c4b88eb5419fb3c6bab09b5be3) · [`2d07ce7`](https://github.com/DataTechApi/DataSkill/commit/2d07ce745c8676293a32019bd889bf975574eca6)
 
 > O front-end do DataSkill (Angular) foi desenvolvido por outros integrantes; meu foco neste projeto foi o back-end.
 
