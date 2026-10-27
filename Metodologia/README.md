@@ -478,7 +478,9 @@ A empresa não possuía um sistema que centralizasse a alocação, visualizaçã
 ---
 ## 👨‍💻 3.0 Contribuições Pessoais
 
-Atuei principalmente no **front-end**, em tarefas ligadas a issues do projeto. Todas as entregas podem ser conferidas no histórico de commits do repositório:
+No DataAgenda, atuei no **front-end** e fiquei responsável por partes que todos os usuários utilizam: a tela de login, a proteção das páginas internas, o tema claro/escuro do sistema inteiro e a correção de um bug que fazia o usuário perder dados.
+
+Cada entrega pode ser conferida no commit indicado:
 
 | Entrega | O que eu fiz | Evidência |
 |---|---|---|
@@ -487,8 +489,6 @@ Atuei principalmente no **front-end**, em tarefas ligadas a issues do projeto. T
 | **Proteção de rotas** (issue #30) | Adicionei a rota `/login` e um *navigation guard* (`router.beforeEach`) no Vue Router: sem token na sessão, o usuário é redirecionado para o login; já autenticado, ele vai direto para o dashboard. | [`c829854`](https://github.com/DataTechApi/DataAgenda/commit/c829854ad3a4af3822d521cb312fa2417ac51dd4) |
 | **Modo claro/escuro** (issue #67) | Criei a store `theme.ts` com **Pinia**, que guarda a preferência do usuário no `localStorage`; substituí as cores fixas por **variáveis CSS** (`--bg-app`, `--text-main` etc.) no `custom-theme.css` e configurei o `darkModeSelector` do PrimeVue. A mudança foi aplicada em **23 telas**, além do cabeçalho e do layout principal. | [`ac58691`](https://github.com/DataTechApi/DataAgenda/commit/ac586916ee2ed6a5955bb919dc1188a0c267d665) |
 | **Correção de bug** (issue #75) | Identifiquei que, ao cancelar a edição de um cliente, os dados do formulário eram perdidos. Corrigi guardando uma cópia do estado original (`clienteOriginal.value = { ...response.data }`) assim que os dados chegam da API, para restaurá-los no cancelamento. | [`608eb59`](https://github.com/DataTechApi/DataAgenda/commit/608eb59558d2c0ae2683f38d412491b64eb6aa56) |
-
-> A autenticação no back-end (Spring Security com JWT) foi implementada por outro integrante da equipe; minha parte no login foi a interface e o controle de acesso às rotas no front-end.
 
 ---
 
@@ -506,16 +506,62 @@ Atuei principalmente no **front-end**, em tarefas ligadas a issues do projeto. T
 
 ## 🛠️ 4.1 Hard Skills Desenvolvidas
 
-| Habilidade | Por que posso afirmar que sei |
-|---|---|
-| 🌐 **Vue 3 (Composition API)** | Desenvolvi telas com `<script setup>`, estado reativo (`ref`) e ciclo de vida (`onMounted`), como a `LoginView.vue` e a aplicação do tema no `App.vue`. |
-| 🧭 **Vue Router** | Criei a rota de login e um *navigation guard* global com `router.beforeEach`, que controla o acesso às páginas conforme a autenticação. |
-| 🗂️ **Pinia (gerenciamento de estado)** | Implementei a store de tema (`useThemeStore`), compartilhada por toda a aplicação, com as funções `toggle` e `apply`. |
-| 🎨 **CSS (variáveis, Flexbox e temas)** | Construí o sistema de temas com variáveis CSS e transições, e resolvi a responsividade da tela de técnicos com Flexbox. |
-| 🧱 **PrimeVue** | Usei os componentes de formulário (`InputText`, `Password`, `Button`) e configurei o tema Aura com `darkModeSelector`. |
-| 💾 **Web Storage** | Usei o `localStorage` para persistir a preferência de tema entre acessos e o `sessionStorage` para guardar o token da sessão. |
-| 🟦 **TypeScript** | Escrevi a store de tema e as alterações do router em arquivos `.ts`. |
-| 🐞 **Depuração** | Encontrei e corrigi a causa da perda de dados ao cancelar a edição de cliente (issue #75), um problema de gerenciamento de estado. |
-| 🔧 **Git e GitHub** | Cada entrega está ligada a uma issue (#21, #30, #67 e #75) e foi integrada às branches das sprints. |
+Para cada habilidade, explico o que construí e por que fiz daquela forma, com o link do commit como evidência.
+
+#### 🌐 Vue 3 (Composition API)
+
+**Por que sei usar:** Desenvolvi a `LoginView.vue` com `<script setup>` e estado reativo (`ref`) para as credenciais, o indicador de carregamento e as mensagens de erro. No `App.vue`, usei `onMounted` para aplicar o tema escolhido assim que o sistema abre.
+
+**Onde comprovar:** [`c829854`](https://github.com/DataTechApi/DataAgenda/commit/c829854ad3a4af3822d521cb312fa2417ac51dd4) · [`ac58691`](https://github.com/DataTechApi/DataAgenda/commit/ac586916ee2ed6a5955bb919dc1188a0c267d665)
+
+#### 🧭 Vue Router (controle de acesso)
+
+**Por que sei usar:** Criei a rota `/login` e um *navigation guard* global (`router.beforeEach`) que verifica se há token na sessão: sem token, o usuário é levado ao login; com token, ele não volta para a tela de login e segue para o dashboard. Esse controle impede o acesso direto às páginas internas pela URL.
+
+**Onde comprovar:** [`c829854`](https://github.com/DataTechApi/DataAgenda/commit/c829854ad3a4af3822d521cb312fa2417ac51dd4)
+
+#### 🗂️ Pinia (gerenciamento de estado)
+
+**Por que sei usar:** Criei a store `useThemeStore`, com o estado `isDark` e as funções `toggle` e `apply`. Por ser uma store global, qualquer componente consegue ler ou trocar o tema, e a mudança vale para o sistema inteiro.
+
+**Onde comprovar:** [`ac58691`](https://github.com/DataTechApi/DataAgenda/commit/ac586916ee2ed6a5955bb919dc1188a0c267d665)
+
+#### 🎨 CSS (variáveis, temas e Flexbox)
+
+**Por que sei usar:** Troquei as cores fixas das telas por variáveis CSS (`--bg-app`, `--bg-card`, `--text-main` etc.) no `custom-theme.css`, de modo que os temas claro e escuro apenas redefinem essas variáveis. Apliquei isso em **23 telas**, no cabeçalho e no layout principal, com transições suaves. Na issue #21, refiz a tela de técnicos com Flexbox (`flex-wrap`, `min-width`, `max-width`) para que funcionasse em monitores diferentes.
+
+**Onde comprovar:** [`8938ce2`](https://github.com/DataTechApi/DataAgenda/commit/8938ce2fee90535ec512f6d4a7263b14cc5c3c1b) · [`ac58691`](https://github.com/DataTechApi/DataAgenda/commit/ac586916ee2ed6a5955bb919dc1188a0c267d665)
+
+#### 🧱 PrimeVue
+
+**Por que sei usar:** Usei os componentes `InputText`, `Password` e `Button` na tela de login e configurei o `darkModeSelector` do tema Aura para que os componentes da biblioteca acompanhassem o tema escolhido pelo usuário.
+
+**Onde comprovar:** [`c829854`](https://github.com/DataTechApi/DataAgenda/commit/c829854ad3a4af3822d521cb312fa2417ac51dd4) · [`ac58691`](https://github.com/DataTechApi/DataAgenda/commit/ac586916ee2ed6a5955bb919dc1188a0c267d665)
+
+#### 💾 Web Storage
+
+**Por que sei usar:** Usei o `localStorage` para a preferência de tema, que deve continuar valendo depois de fechar o navegador, e o `sessionStorage` para o token, que deve expirar quando a aba é fechada. Escolhi cada um de acordo com o tempo de vida que o dado precisava ter.
+
+**Onde comprovar:** [`c829854`](https://github.com/DataTechApi/DataAgenda/commit/c829854ad3a4af3822d521cb312fa2417ac51dd4) · [`ac58691`](https://github.com/DataTechApi/DataAgenda/commit/ac586916ee2ed6a5955bb919dc1188a0c267d665)
+
+#### 🟦 TypeScript
+
+**Por que sei usar:** Escrevi a store de tema (`theme.ts`) e as alterações do router (`router/index.ts`) em TypeScript.
+
+**Onde comprovar:** [`c829854`](https://github.com/DataTechApi/DataAgenda/commit/c829854ad3a4af3822d521cb312fa2417ac51dd4) · [`ac58691`](https://github.com/DataTechApi/DataAgenda/commit/ac586916ee2ed6a5955bb919dc1188a0c267d665)
+
+#### 🐞 Depuração
+
+**Por que sei usar:** Na issue #75, descobri que o formulário de edição não guardava o estado original do cliente, por isso os dados se perdiam ao cancelar. Passei a salvar uma cópia (`{ ...response.data }`) assim que os dados chegam da API, o que permite restaurá-los. A correção tem uma linha, mas exigiu entender o fluxo de dados da tela.
+
+**Onde comprovar:** [`608eb59`](https://github.com/DataTechApi/DataAgenda/commit/608eb59558d2c0ae2683f38d412491b64eb6aa56)
+
+#### 🔧 Git e GitHub
+
+**Por que sei usar:** Cada entrega está ligada a uma issue (#21, #30, #67 e #75) e foi integrada às branches das sprints.
+
+**Onde comprovar:** [`8938ce2`](https://github.com/DataTechApi/DataAgenda/commit/8938ce2fee90535ec512f6d4a7263b14cc5c3c1b) · [`c829854`](https://github.com/DataTechApi/DataAgenda/commit/c829854ad3a4af3822d521cb312fa2417ac51dd4) · [`ac58691`](https://github.com/DataTechApi/DataAgenda/commit/ac586916ee2ed6a5955bb919dc1188a0c267d665) · [`608eb59`](https://github.com/DataTechApi/DataAgenda/commit/608eb59558d2c0ae2683f38d412491b64eb6aa56)
+
+> A autenticação no back-end (Spring Security com JWT) foi implementada por outro integrante da equipe; minha parte no login foi a interface e o controle de acesso às rotas no front-end.
 
 ---
