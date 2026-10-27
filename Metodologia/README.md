@@ -57,16 +57,19 @@ A equipe desenvolveu uma calculadora com menu em modo texto, oferecendo as segui
 ---
 ## 👨‍💻 3.0 Contribuições Pessoais
 
-Neste primeiro projeto, fui responsável por duas operações da calculadora, pela organização do código e pela documentação do repositório. Foi meu primeiro contato com o desenvolvimento em equipe, e as entregas abaixo mostram como apliquei na prática a lógica de programação aprendida no semestre.
+Neste primeiro projeto, participei do desenvolvimento da calculadora desde o planejamento das sprints até a entrega final, atuando tanto na programação quanto na organização do código e da documentação.
 
-Cada entrega pode ser conferida no commit indicado:
+* Desenvolvimento da **operação de multiplicação**, criando o procedimento responsável pelo cálculo e integrando-o ao menu de operações básicas da calculadora.
 
-| Entrega | O que eu fiz | Evidência |
-|---|---|---|
-| **Multiplicação** (backlog ID 2 – Sprint 1) | Criei o procedimento `multiplicar()` e o liguei à opção 03 do menu de operações básicas, reaproveitando a leitura dos números feita pelo procedimento `lerOperacoesBasicas()`. | [`be9bf68`](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec/commit/be9bf689e9c6a0ae83788ebc58c4237ab308d274) |
-| **Concatenação de strings** (backlog ID 11 – Sprint 3) | Criei o procedimento `concatenacaoString()`, que lê duas partes de texto, **valida se as duas foram preenchidas** (exibindo uma mensagem de erro caso contrário) e mostra o resultado. Também incluí a opção 07 no menu principal. | [`0e2eee8`](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec/commit/0e2eee8316257dc75f151b6b7ac5ad60b6a9dcef) |
-| **Organização do código** | Reorganizei e indentei os procedimentos no final do algoritmo, deixando o menu principal mais limpo e o código mais fácil de manter por toda a equipe. | [`0e2eee8`](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec/commit/0e2eee8316257dc75f151b6b7ac5ad60b6a9dcef) |
-| **Documentação** | Reestruturei o README do repositório, organizando backlog, sprints, requisitos e tecnologias. | [`f37b8db`](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec/commit/f37b8db197dde73e39ecd0786cc00a07bc39a0c4) |
+* Implementação da **concatenação de strings**, funcionalidade que recebe duas partes de texto, valida se ambas foram preenchidas e exibe o resultado ao usuário.
+
+* Inclusão das novas opções no **menu principal**, garantindo que as operações já existentes continuassem funcionando normalmente.
+
+* **Organização e indentação dos procedimentos** do algoritmo, deixando o código mais legível e facilitando o trabalho dos demais integrantes.
+
+* **Reestruturação da documentação (README)** do repositório, com backlog, sprints, requisitos e tecnologias utilizadas.
+
+* Participação nas **cerimônias do Scrum** (planejamento, review e retrospectiva) e na validação das funcionalidades desenvolvidas.
 
 ---
 
@@ -82,37 +85,15 @@ Cada entrega pode ser conferida no commit indicado:
 
 ## 🛠️ 4.1 Hard Skills Desenvolvidas
 
-Para cada habilidade, explico o que construí e por que fiz daquela forma, com o link do commit como evidência.
+* 🧩 **Lógica de programação** – criei procedimentos com entrada, processamento e saída de dados e os integrei a um menu com estruturas condicionais.
 
-#### 🧩 Lógica de programação e modularização
+* ✅ **Validação de dados** – tratei entradas incompletas na concatenação, exibindo mensagens de erro ao usuário.
 
-**Por que sei usar:** Implementei os procedimentos `multiplicar()` e `concatenacaoString()`, cada um com entrada de dados (`leia`), processamento e saída (`escreval`). Para integrá-los, precisei entender o fluxo do menu principal, construído com estruturas `se/senao` aninhadas, e encaixar as novas opções (03 e 07) sem quebrar as operações que já existiam.
+* 🧹 **Organização de código** – separei as operações em procedimentos e padronizei a indentação do algoritmo.
 
-**Onde comprovar:** [`be9bf68`](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec/commit/be9bf689e9c6a0ae83788ebc58c4237ab308d274) · [`0e2eee8`](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec/commit/0e2eee8316257dc75f151b6b7ac5ad60b6a9dcef)
+* 🔧 **Git e GitHub** – realizei commits em um repositório compartilhado, seguindo um padrão de mensagens.
 
-#### ✅ Validação de entrada
-
-**Por que sei usar:** Na concatenação, não me limitei a juntar os textos: verifiquei se as duas partes foram digitadas e, se alguma estivesse vazia, exibi uma mensagem de erro em vez de um resultado incorreto. Isso mostra preocupação com o uso real do programa, e não só com o caso em que tudo dá certo.
-
-**Onde comprovar:** [`0e2eee8`](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec/commit/0e2eee8316257dc75f151b6b7ac5ad60b6a9dcef)
-
-#### 🧹 Organização e legibilidade do código
-
-**Por que sei usar:** Reorganizei e indentei os procedimentos no final do algoritmo. Com o código separado por operação, os outros integrantes conseguiam localizar e adicionar novas funções sem conflitos.
-
-**Onde comprovar:** [`0e2eee8`](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec/commit/0e2eee8316257dc75f151b6b7ac5ad60b6a9dcef)
-
-#### 🔧 Git e GitHub
-
-**Por que sei usar:** Fiz meus commits em um repositório compartilhado seguindo, desde o início, um padrão de mensagens (`:sparkles: feat`, `📚 docs`) que mantive em todos os projetos seguintes. Também reestruturei o README do repositório com backlog, sprints e requisitos.
-
-**Onde comprovar:** [`be9bf68`](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec/commit/be9bf689e9c6a0ae83788ebc58c4237ab308d274) · [`0e2eee8`](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec/commit/0e2eee8316257dc75f151b6b7ac5ad60b6a9dcef) · [`f37b8db`](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec/commit/f37b8db197dde73e39ecd0786cc00a07bc39a0c4)
-
-#### 📋 Scrum
-
-**Por que sei usar:** Minhas entregas correspondem a itens do backlog do produto (ID 2 na Sprint 1 e ID 11 na Sprint 3), planejados com a equipe e apresentados nas sprint reviews.
-
-**Onde comprovar:** [`be9bf68`](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec/commit/be9bf689e9c6a0ae83788ebc58c4237ab308d274) · [`0e2eee8`](https://github.com/IsaacOliveiraSouza/Aplicacao_Projeto_Integragor_Fatec/commit/0e2eee8316257dc75f151b6b7ac5ad60b6a9dcef)
+* 📋 **Scrum** – entreguei itens do backlog do produto dentro das sprints planejadas.
 
 ---
 
