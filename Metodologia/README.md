@@ -147,19 +147,23 @@ A equipe desenvolveu uma aplicação em Java com interface gráfica e banco de d
 ---
 ## 👨‍💻 3.0 Contribuições Pessoais
 
-No segundo semestre, fiquei responsável pela entrada do sistema (tela de login e recuperação de senha) e por **todo o módulo de cursos, da tela ao banco de dados**. Também resolvi um problema de versionamento que poderia ter feito a equipe perder trabalho.
+No segundo semestre, atuei como desenvolvedor na equipe SINAPSE, contribuindo nas telas da aplicação, na comunicação com o banco de dados e na organização do repositório.
 
-Cada entrega pode ser conferida no commit indicado:
+* Desenvolvimento da **tela de login** em JavaFX, com campos de e-mail e senha e a opção de mostrar ou ocultar a senha digitada.
 
-| Entrega | O que eu fiz | Evidência |
-|---|---|---|
-| **Tela de login** | Construí a tela `TelaLogin` em JavaFX, com layout em `VBox`, campos de e-mail e senha e um botão para **mostrar/ocultar a senha**, alternando entre `PasswordField` e `TextField` e mantendo o texto digitado sincronizado entre os dois. | [`0c67a91`](https://github.com/vp-p/gerenciador-horario-aula/commit/0c67a9141df64c307d4bfb09f165c17cffabc8fb) |
-| **Recuperação de senha** | Adicionei o botão "Esqueci minha senha", que abre a tela `RecuperarSenha` em uma nova janela (`Stage`). | [`de5e526`](https://github.com/vp-p/gerenciador-horario-aula/commit/de5e5268216ae06e18f9d6dbe8a12d710650fc4e) |
-| **Tela de cadastro de cursos** | Criei a classe `Curso`, o `CadastroCursoController` e o `cadastroCurso.fxml`, com a tabela de cursos e o alinhamento das colunas no `style.css`. | [`ecb7267`](https://github.com/vp-p/gerenciador-horario-aula/commit/ecb726787b3aea75bdb3549d6ed916c599905229) |
-| **CRUD de cursos com banco de dados** | Implementei o `CursoDAO` com JDBC e `PreparedStatement`: `INSERT` para cadastrar, `SELECT` para listar e **exclusão lógica** (`UPDATE curso SET deletado = 1`), que remove o curso da tela sem apagar o histórico do banco. | [`9d3bfed`](https://github.com/vp-p/gerenciador-horario-aula/commit/9d3bfed79ddd117bb2410f98c23b398dcb21f7ac) |
-| **Filtro e exclusão em lote** | Criei o popup de cadastro (`PopupCursoController`) e o popup de **filtro por coordenador** (`PopupFiltroController`, com `ComboBox`), além da seleção de vários cursos por checkbox e da exclusão com alerta de confirmação. | [`9d3bfed`](https://github.com/vp-p/gerenciador-horario-aula/commit/9d3bfed79ddd117bb2410f98c23b398dcb21f7ac) |
-| **Modelagem do banco** | Adicionei a coluna `periodo` à tabela `curso` no modelo do MySQL Workbench (`bancoApi2.mwb`). | [`c3146e1`](https://github.com/vp-p/gerenciador-horario-aula/commit/c3146e1fffdb7589f3fbb247a297d9fdca8a9fd1) |
-| **Recuperação do versionamento** | Quando um erro de versionamento deixou a branch inconsistente, reverti os commits problemáticos e reapliquei as alterações completas e funcionando, sem perder o trabalho da equipe. | [`055d054`](https://github.com/vp-p/gerenciador-horario-aula/commit/055d0541b52c807e844c77e5c184390747105f09) · [`661ad37`](https://github.com/vp-p/gerenciador-horario-aula/commit/661ad370bb8454279d9fc2a494614028cff716c4) · [`9d3bfed`](https://github.com/vp-p/gerenciador-horario-aula/commit/9d3bfed79ddd117bb2410f98c23b398dcb21f7ac) |
+* Criação do botão **"Esqueci minha senha"**, com o direcionamento para a tela de recuperação de senha.
+
+* Desenvolvimento do **módulo de cadastro de cursos**: tela, controller, classe de domínio e estilização.
+
+* Implementação do **CRUD de cursos** integrado ao MySQL, com cadastro, listagem e exclusão lógica dos registros.
+
+* Criação dos **popups de cadastro e de filtro por coordenador**, além da seleção e exclusão de vários cursos de uma só vez, com confirmação do usuário.
+
+* Atualização da **modelagem do banco de dados**, com a inclusão da coluna de período na tabela de cursos.
+
+* **Correção de um problema de versionamento**, revertendo as alterações afetadas e reaplicando o código sem perder o trabalho da equipe.
+
+* Integração da branch de cursos à `main` e participação nas reuniões e entregas de cada sprint.
 
 ---
 
@@ -175,55 +179,21 @@ Cada entrega pode ser conferida no commit indicado:
 
 ## 🛠️ 4.1 Hard Skills Desenvolvidas
 
-Para cada habilidade, explico o que construí e por que fiz daquela forma, com o link do commit como evidência.
+* ☕ **Java e Orientação a Objetos** – modelei a classe de cursos com encapsulamento e propriedades ligadas à interface.
 
-#### ☕ Java e Orientação a Objetos
+* 🖥️ **JavaFX** – construí telas em código e em FXML, com tabelas, janelas modais e alertas.
 
-**Por que sei usar:** Modelei a classe `Curso` com atributos privados, getters e setters e dois construtores: um para os dados que vêm do banco e outro para um novo cadastro. Usei as *properties* do JavaFX (`StringProperty`, `BooleanProperty`) para que a tabela se atualizasse automaticamente quando os dados mudassem.
+* 🗃️ **SQL e JDBC** – escrevi consultas parametrizadas com `PreparedStatement` e implementei a exclusão lógica.
 
-**Onde comprovar:** [`ecb7267`](https://github.com/vp-p/gerenciador-horario-aula/commit/ecb726787b3aea75bdb3549d6ed916c599905229) · [`661ad37`](https://github.com/vp-p/gerenciador-horario-aula/commit/661ad370bb8454279d9fc2a494614028cff716c4)
+* 🧱 **Padrão DAO** – separei o acesso ao banco de dados da lógica das telas.
 
-#### 🖥️ JavaFX
+* 🔁 **Streams e coleções** – usei Streams e `FilteredList` nos filtros e na exclusão em lote.
 
-**Por que sei usar:** Construí a tela de login inteira em código (`VBox`, `TextField`, `PasswordField`, `Stage`) e a tela de cursos em FXML com controller (`@FXML`). Implementei recursos de interação como mostrar/ocultar a senha, tabela com checkbox de seleção (`setCellValueFactory`), janelas modais (`Modality.APPLICATION_MODAL`) e alertas de aviso, erro e confirmação antes de excluir.
+* 📐 **Modelagem de dados** – alterei o modelo relacional no MySQL Workbench.
 
-**Onde comprovar:** [`0c67a91`](https://github.com/vp-p/gerenciador-horario-aula/commit/0c67a9141df64c307d4bfb09f165c17cffabc8fb) · [`de5e526`](https://github.com/vp-p/gerenciador-horario-aula/commit/de5e5268216ae06e18f9d6dbe8a12d710650fc4e) · [`ecb7267`](https://github.com/vp-p/gerenciador-horario-aula/commit/ecb726787b3aea75bdb3549d6ed916c599905229) · [`9d3bfed`](https://github.com/vp-p/gerenciador-horario-aula/commit/9d3bfed79ddd117bb2410f98c23b398dcb21f7ac)
+* 🔧 **Git** – trabalhei com branches, merge e reversão de alterações.
 
-#### 🗃️ SQL e JDBC
-
-**Por que sei usar:** Escrevi as operações do CRUD de cursos com `PreparedStatement`, usando parâmetros (`?`) em vez de concatenar strings, o que protege contra SQL Injection. Implementei a **exclusão lógica** (`UPDATE curso SET deletado = 1`) e a listagem apenas dos registros ativos (`WHERE deletado = 0`), mantendo o histórico no banco.
-
-**Onde comprovar:** [`9d3bfed`](https://github.com/vp-p/gerenciador-horario-aula/commit/9d3bfed79ddd117bb2410f98c23b398dcb21f7ac)
-
-#### 🧱 Padrão DAO
-
-**Por que sei usar:** Isolei todo o acesso ao banco no `CursoDAO`. O controller só chama `criar`, `listarTodos` e `delete`, sem conhecer o SQL; assim, uma mudança no banco não afeta a tela.
-
-**Onde comprovar:** [`9d3bfed`](https://github.com/vp-p/gerenciador-horario-aula/commit/9d3bfed79ddd117bb2410f98c23b398dcb21f7ac)
-
-#### 🔁 Streams e coleções do Java
-
-**Por que sei usar:** Na exclusão em lote, usei `anyMatch` para verificar se havia algum curso selecionado e `stream().filter(...).collect(...)` para montar a lista a excluir. No filtro por coordenador, usei `FilteredList` com `setPredicate`, filtrando a tabela sem precisar de uma nova consulta ao banco.
-
-**Onde comprovar:** [`9d3bfed`](https://github.com/vp-p/gerenciador-horario-aula/commit/9d3bfed79ddd117bb2410f98c23b398dcb21f7ac)
-
-#### 📐 Modelagem de dados
-
-**Por que sei usar:** Alterei o modelo relacional no MySQL Workbench, adicionando a coluna `periodo` à tabela `curso`, e ajustei a classe, o DAO e a tela para trabalhar com o novo campo.
-
-**Onde comprovar:** [`c3146e1`](https://github.com/vp-p/gerenciador-horario-aula/commit/c3146e1fffdb7589f3fbb247a297d9fdca8a9fd1) · [`661ad37`](https://github.com/vp-p/gerenciador-horario-aula/commit/661ad370bb8454279d9fc2a494614028cff716c4) · [`9d3bfed`](https://github.com/vp-p/gerenciador-horario-aula/commit/9d3bfed79ddd117bb2410f98c23b398dcb21f7ac)
-
-#### 🔧 Git (branches, merge e revert)
-
-**Por que sei usar:** Trabalhei na branch `CrudCursos` e fiz o merge na `main`. Quando um erro de versionamento deixou o código inconsistente, reverti os commits afetados e reapliquei as alterações completas, sem perder o trabalho de ninguém. Saber desfazer e refazer alterações com segurança é essencial no trabalho em equipe.
-
-**Onde comprovar:** [`055d054`](https://github.com/vp-p/gerenciador-horario-aula/commit/055d0541b52c807e844c77e5c184390747105f09) · [`661ad37`](https://github.com/vp-p/gerenciador-horario-aula/commit/661ad370bb8454279d9fc2a494614028cff716c4) · [`9d3bfed`](https://github.com/vp-p/gerenciador-horario-aula/commit/9d3bfed79ddd117bb2410f98c23b398dcb21f7ac)
-
-#### 📋 Scrum com Jira
-
-**Por que sei usar:** Minhas entregas correspondem às histórias de usuário SIN-9 (cadastro de cursos) e SIN-14 (login), acompanhadas no Jira durante as sprints.
-
-**Onde comprovar:** [`0c67a91`](https://github.com/vp-p/gerenciador-horario-aula/commit/0c67a9141df64c307d4bfb09f165c17cffabc8fb) · [`9d3bfed`](https://github.com/vp-p/gerenciador-horario-aula/commit/9d3bfed79ddd117bb2410f98c23b398dcb21f7ac)
+* 📋 **Scrum com Jira** – acompanhei minhas tarefas no backlog e nas sprints.
 
 ---
 
